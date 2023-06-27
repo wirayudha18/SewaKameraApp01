@@ -6,11 +6,11 @@ import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-@Entity(tableName = "kamera_table")
-data class Kamera(
+@Entity(tableName = "camera_table")
+data class Camera(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     val name: String,
-    val barang: String,
-    val Durasi: String
+    val item: String,
+    val time: String
 ) : Parcelable
