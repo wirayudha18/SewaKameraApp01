@@ -4,7 +4,7 @@ import com.example.sewakameraapp01.dao.CameraDao
 import com.example.sewakameraapp01.model.Camera
 import kotlinx.coroutines.flow.Flow
 
-class KameraRepository(private val cameraDao: CameraDao) {
+class CameraRepository(private val cameraDao: CameraDao) {
     val allCameras: Flow<List<Camera>> =cameraDao.getAllCamera()
 
     suspend fun insertCamera(camera: Camera) {
