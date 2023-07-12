@@ -12,5 +12,7 @@ data class Camera(
     val id: Int = 0,
     val name: String,
     val item: String,
-    val time: String
+    val time: String,
+    val latitude: Double?,
+    val longitude: Double?
 ) : Parcelable
