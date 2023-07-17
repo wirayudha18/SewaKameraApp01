@@ -69,6 +69,18 @@ class FirstFragment : Fragment() {
                val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(null)
                findNavController().navigate(action)
         }
+
+        binding.profileFAB.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_ProfileFragment)
+        }
+
+        binding.catalogFAB.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_CatalogFragment)
+        }
+
+        binding.scheduleFAB.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_ScheduleFragment)
+        }
     }
 
     override fun onDestroyView() {

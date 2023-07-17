@@ -14,6 +14,17 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_CatalogFragment"
+            app:destination="@id/CatalogFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ScheduleFragment"
+            app:destination="@id/ScheduleFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -29,4 +40,33 @@
             app:argType="com.example.sewakameraapp01.model.Camera"
             app:nullable="true"/>
     </fragment>
+
+    <fragment
+        android:id="@+id/CatalogFragment"
+        android:name="com.example.sewakameraapp01.CatalogFragment"
+        android:label="@string/catalog_fragment_label"
+        tools:layout="@layout/fragment_catalog">
+        <action
+            android:id="@+id/action_CatalogFragment_to_FirstFragment"
+            app:destination="@+id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.sewakameraapp01.ProfileFragment"
+        android:label="@string/profile_fragment_label"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_ProfileFragment_to_FirstFragment"
+            app:destination="@+id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ScheduleFragment"
+        android:name="com.example.sewakameraapp01.ui.ScheduleFragment"
+        android:label="@string/schedule_fragment_label"
+        tools:layout="@layout/fragment_schedule">
+        <action
+            android:id="@+id/action_ScheduleFragment_to_FirstFragment"
+            app:destination="@+id/FirstFragment" />
+    </fragment>
+
 </navigation>
